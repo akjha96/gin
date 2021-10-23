@@ -53,8 +53,9 @@ type Context struct {
 	index    int8
 	fullPath string
 
-	engine *Engine
-	params *Params
+	engine       *Engine
+	params       *Params
+	skippedNodes *[]skippedNode
 
 	// This mutex protect Keys map
 	mu sync.RWMutex
